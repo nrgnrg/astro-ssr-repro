@@ -1,0 +1,21 @@
+---
+import "web-streams-polyfill/es2018";
+
+const SSR = import.meta.env.SSR
+const typeofSSR = typeof SSR
+---
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Astro</title>
+</head>
+
+<body>
+	<p>SSR: {SSR}</p>
+	<p>typeof SSR: {typeofSSR}</p>
+</body>
+
+</html>
